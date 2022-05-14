@@ -1,0 +1,255 @@
+.General_HeadThree
+{
+    width: 100%;
+    padding-bottom: 2px;
+    border-bottom: solid 2px #111111;
+}
+
+.Post p
+{
+    margin-bottom: 25px;
+}
+.Post_about div:last-of-type p:last-of-type
+{
+    margin-bottom: 0px;
+}
+.Post h2
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.NewsEnd_Label
+{
+    text-transform: uppercase;
+    font-size: 56px;
+    color: #151515;
+    font-family: "PTSansNarrow-Regular.ttf";
+    margin-bottom: 30px;
+}
+.NewsEnd
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 55px 0px 33px 0px;
+}
+.NewsEnd a
+{
+    margin-left: 25px;
+}
+.NewsEnd a:first-of-type
+{
+    margin-left: 0px;
+}
+.RelatedPosts
+{
+    margin-bottom: 30px;
+}
+
+.RelatedPosts li
+{
+    margin-bottom: 5px;
+}
+.RelatedPosts a
+{
+color: #888888;
+text-decoration: underline;
+font-size: 14px;
+}
+.Comment
+{
+    background-color: #151515;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Comment_Main
+{
+    display: flex;
+}
+.Comment_photo
+{
+    background-color: #181818;
+    box-shadow: inset 1px 1px 0px rgba(0 0 0 /67%),1px 1px 0px rgba(30 30 30 /96%);
+    max-height: 50px;
+    padding: 8px;
+    margin-right:  9px;
+}
+.comment_Head
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.comment_Author
+{
+    display: flex;
+
+}
+.comment_Author h3
+{
+    font-size: 18px;
+    text-transform: none;
+    color: #00a1fe;
+    margin-bottom: 0px;
+}
+.comment_Author span
+{
+    color: #888888;
+    align-self: flex-end;
+    font-size: 16px;
+    margin-left: 5px;
+    font-family: "PTSansNarrow-Regular.ttf";
+}
+.Comment_Main>div:nth-child(2)
+{
+    width: 570px;
+}
+.Comment_Main .News_Created
+{
+    margin-top: 0px;
+}
+.Comment_Main .News_Created span
+{
+    color: #2d2d2d;
+}
+.Comment_Main p
+{
+  font-size: 12px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+.Reply
+{
+    font-size: 14px;
+    color: #00a1fe;
+    text-decoration: underline;
+    font-family: "PTSansNarrow-Regular.ttf";
+    cursor: pointer;
+}
+.comment_Head_Reply
+{
+    margin-bottom: 10px;
+}
+.Comment_reply
+{
+    display: flex;
+    border-top: 2px solid #111111;
+    padding-top: 13px;
+    padding-left: 30px;
+    
+}
+.Comment_reply .News_Created
+{
+    margin-top: 0px;
+}
+.Comment_reply .News_Created span
+{
+    color: #2d2d2d;
+}
+.Comment_reply p
+{
+  font-size: 12px;
+  line-height: 18px;
+  overflow-wrap: anywhere;
+}
+.input_comment
+{
+    box-shadow: inset 1px 1px 0px rgba(0 0 0 /67%),1px 1px 0px rgba(30 30 30 /96%);
+background-color: #151515;
+padding: 5px;
+color: white;
+}
+.Send_Reply
+{
+    padding: 0px  10px 10px 10px;
+    border: 2px solid #111111;;
+    margin-bottom: 10px;
+}
+.Send_Reply form
+{
+    display: flex;
+    flex-direction: column;
+}
+.Send_Reply h3
+{
+    font-size: 18px;
+    text-transform: none;
+    color: #00a1fe;
+    margin: 10px 0px;
+}
+.Send_Reply textarea
+{
+    resize: none;
+    margin-bottom: 10px;
+    height: 150px;
+}
+.Send_Reply button  
+{
+    margin-left: auto;
+    width: 85px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+.WriteCom form
+{
+    display: flex;
+    justify-content: space-between;
+}
+.WriteCom form h3
+{  
+    font-size: 18px;
+    text-transform: none;
+    color: #00a1fe;
+    margin: 10px 0px;
+
+}
+.WriteCom form>div
+{
+display: flex;
+flex-direction: column;
+width: 315px;
+}
+
+.WriteCom form textarea
+{
+    height: 150px;
+    max-width: 100%;
+    resize: none;
+    margin-left: 10px;
+}
+.WriteCom form input
+{
+    width: 100%;
+}
+.WriteCom form  button
+{
+    margin-top: 10px;
+    margin-left: auto;
+    width: 85px;
+    padding: 5px;
+    font-size: 17px;
+}
+@media (max-width:800px) {
+    .WriteCom form
+{
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media (max-width:500px) {
+    .Post h2
+{
+    font-size: 20px;
+}
+.WriteCom form>div
+{
+
+width: 100%;
+}
+
+    
+}
