@@ -1,9 +1,91 @@
+let NavList=document.querySelector(".Nav_List");
 let CommentNews=document.querySelectorAll(`.Comment`)
 let ReplyButton=document.querySelectorAll(`.Reply`);
 let CommentMain=document.querySelectorAll(".Comment_Main");
 const MainTreeCommnet=document.querySelector('.Comments')
 const SendCommentButton=document.querySelector(`.WriteCom button`)
 const CountPost=document.querySelector(`.Count_Post`)
+function Resize()
+{
+    if (window.screen.width!==window.innerWidth)
+    {  
+        if (window.innerWidth <= 500) {
+        if (NavList)
+       { NavList.remove()
+        NavList="";
+        document.querySelector("header").insertAdjacentHTML("beforeend",`<nav class="Nav_Burger">
+        <span></span>
+        <ul class="Navigation">
+            <li> <a href="">about me</a> </li>
+            <li> <a href="">articles</a> </li>
+            <li> <a href="">gallery</a> </li>
+            <li> <a href="">contact</a> </li>
+        </ul>
+    </nav>`)
+    }
+
+    return
+      }else
+      {
+        if (!NavList)
+        {
+            document.querySelector(".Nav_Burger").remove();
+            document.querySelector("header").insertAdjacentHTML("beforeend",` <nav class="Nav_List">
+            <ul class="Navigation">
+                <span></span>
+                <li> <a href="">about me</a> </li>
+                <li> <a href="">articles</a> </li>
+                <li> <a href="">gallery</a> </li>
+                <li> <a href="">contact</a> </li>
+            </ul>
+        </nav>`)
+        NavList=document.querySelector(".Nav_List");
+        }
+
+      }
+      return
+  }else 
+     { 
+        if (window.screen.width <= 500) 
+        {
+            if (NavList)
+          {  NavList.remove()
+            NavList="";
+            document.querySelector("header").insertAdjacentHTML("beforeend",`<nav class="Nav_Burger">
+            <span></span>
+            <ul class="Navigation">
+                <li> <a href="">about me</a> </li>
+                <li> <a href="">articles</a> </li>
+                <li> <a href="">gallery</a> </li>
+                <li> <a href="">contact</a> </li>
+            </ul>
+        </nav>`)
+        }
+        return
+      }
+      else 
+    {
+        if (!NavList)
+        {
+            document.querySelector(".Nav_Burger").remove();
+            document.querySelector("header").insertAdjacentHTML("beforeend",` <nav class="Nav_List">
+            <ul class="Navigation">
+                <span></span>
+                <li> <a href="">about me</a> </li>
+                <li> <a href="">articles</a> </li>
+                <li> <a href="">gallery</a> </li>
+                <li> <a href="">contact</a> </li>
+            </ul>
+        </nav>`)
+        NavList=document.querySelector(".Nav_List");
+        }
+
+    }
+return}
+}
+Resize()
+window.onresize = Resize
+
 const AddReply=(e)=>{
     e.preventDefault()
     const date=new Date();
@@ -21,7 +103,10 @@ const AddReply=(e)=>{
     CommentNews[NumComment].insertAdjacentHTML("beforeend",
    ` <div class="Comment_reply">
        <div class="Comment_photo">
-           <img src="images/SingleUser.png" alt="photo">
+       <picture>
+       <source type="image/webp" srcset="images/SingleUser.webp">
+       <img src="images/SingleUser.png" alt="photo">
+   </picture>
        </div>
        <div>
            <div class="comment_Head_Reply"> 
@@ -78,7 +163,10 @@ SendCommentButton.addEventListener("click",(e)=>
     <div class="Comment">
     <div class="Comment_Main">
         <div class="Comment_photo">
-            <img src="images/SingleUser.png" alt="photo">
+        <picture>
+        <source type="image/webp" srcset="images/SingleUser.webp">
+        <img src="images/SingleUser.png" alt="photo">
+    </picture>
         </div>
         <div>
             <div class="comment_Head"> 
