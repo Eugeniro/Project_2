@@ -10,12 +10,18 @@
 
 <body>
     <div class="container">
-        <header>
-            <div>
-                <a href="index.html"><img src="images/logo.png" alt=""></a>
+        <header class="Header">
+            <div class="Header_logo">
+                <a href="index.html">
+                    <picture>
+                        <source type="image/webp" srcset="images/logo.webp">
+                        <img src="images/logo.png" alt="MyThoughts">
+                    </picture>
+                </a>
             </div>
-            <nav>
+            <nav class="Nav_List">
                 <ul class="Navigation">
+                    <span></span>
                     <li> <a href="">about me</a> </li>
                     <li> <a href="">articles</a> </li>
                     <li> <a href="">gallery</a> </li>
@@ -25,8 +31,8 @@
              </header>
              <main>
                  <div class="Main_Left">
-                     <div class="News">
-                         <h2>Neque porro quisquam est qui dolorem ipsum quia</h2>
+                     <article class="News">
+                         <h1>Neque porro quisquam est qui dolorem ipsum quia</h1>
                          <div class="News_Created">
                             <span>05/08/2012</span>
                             <span>in</span>
@@ -41,7 +47,10 @@
                              congue eros. 
                              Etiam at felis at arcu mollis gravida eu a purus.</p>
                          <div class="News_Img">
-                             <img src="images/img1.png" alt="img">
+                             <picture>
+                                <source type="image/webp" srcset="images/img1.webp">
+                                <img src="images/img1.jpg" alt="img">
+                             </picture>
                          </div>
                          <p>
                             Donec porta libero ut leo molestie quis iaculis
@@ -56,9 +65,9 @@
                          <button class="GeneralButton Left_Button">
                              Read more
                          </button>
-                     </div>
-                     <div class="News">
-                        <h2>Duis vitae nisi mi. Quisque elementum</h2>
+                     </article>
+                     <article class="News">
+                        <h1>Duis vitae nisi mi. Quisque elementum</h1>
                         <div class="News_Created">
                            <span>05/08/2012</span>
                            <span>in</span>
@@ -73,7 +82,10 @@
                               Mauris facilisis enim ac enim rhoncus varius. 
                             Phasellus sed sapien est, sit amet facilisis dolor.</p>
                         <div class="News_Img">
-                            <img src="images/Img2.png" alt="img">
+                            <picture>
+                                <source type="image/webp" srcset="images/Img2.webp">
+                                <img src="images/Img2.jpg" alt="img">
+                             </picture>
                         </div>
                         <p>
                             Aliquam erat volutpat. Morbi sapien ligula, luctus id convallis vel, 
@@ -89,7 +101,7 @@
                         <button class="GeneralButton Left_Button">
                             Read more
                         </button>
-                    </div>
+                    </article>
                      <div class="News_PageList">
                          <div>
                              <button class="ActivePage" >1</button>
@@ -104,22 +116,41 @@
                              <button>10</button>
                          </div>
                          <div class="News_NexPage">
-                             <button><img src="images/NextPage.png" alt=""></button>
-                             <button><img src="images/LastPage.png" alt=""></button>
+                             <button>
+                                <picture>
+                                    <source type="image/webp" srcset="images/NextPage.webp">
+                                    <img src="images/NextPage.png" alt="NextPage">
+                                </picture>
+                            </button>
+                             <button>
+                                <picture>
+                                    <source type="image/webp" srcset="images/LastPage.webp">
+                                    <img src="images/LastPage.png" alt="NextPage">
+                                </picture>
                          </div>
                      </div>
                  </div> 
                  <div class="Main_Right">
                      <div class="Social UpSpace">
                          <div class="Social_in">
-                             <div class="Social_img"><a href=""><img src="images/RSSIcon.png" alt=""></a></div>
+                             <div class="Social_img"><a href="">
+                                <picture>
+                                    <source type="image/webp" srcset="images/RSSIcon.webp">
+                                    <img src="images/RSSIcon.png" alt="RSS">
+                                </picture>
+                            </a></div>
                              <div class="Social_About">
                                  <p>158 134</p>
                                  <p>subscribers</p>
                              </div>
                          </div>
                          <div class="Social_in">
-                            <div class="Social_img"><a href="https://www.Twitter.com"><img src="images/TwitterIcon.png" alt=""></a></div>
+                            <div class="Social_img"><a href="https://www.Twitter.com">
+                                <picture>
+                                    <source type="image/webp" srcset="images/TwitterIcon.webp">
+                                    <img src="images/TwitterIcon.png" alt="Twitter">
+                                </picture>
+                            </a></div>
                             <div class="Social_About">
                                 <p>158 134</p>
                                 <p>Followers</p>
@@ -131,7 +162,10 @@
                          <div>
                             <input class="Right_Input" placeholder="Keyword ..." type="text">
                             <button class="GeneralButton Right_Button">
-                                <img src="images/MagnifyingGlass.png" alt="glass">
+                                <picture>
+                                    <source type="image/webp" srcset="images/MagnifyingGlass.webp">
+                                    <img src="images/MagnifyingGlass.png" alt="glass">
+                                </picture>
                             </button>
                          </div>
                      </div>
