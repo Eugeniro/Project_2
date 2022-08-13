@@ -200,7 +200,7 @@ main {
 
 /*Left*/
 .Main_Left {
-  padding: 20px 0;
+  padding: 20px;
   border-right: 1px solid #202020;
   max-width: 700px;
 }
